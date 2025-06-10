@@ -1,0 +1,51 @@
+{
+  "utility": "SDG&E",
+  "rate_schedule": "TOU-DR",
+  "effective_date": "2025-06-01",
+  "rates": {
+    "summer": {
+      "months": [6, 7, 8, 9, 10],
+      "on_peak": 0.59908,
+      "off_peak": 0.52754,
+      "super_off_peak": 0.45000
+    },
+    "winter": {
+      "months": [11, 12, 1, 2, 3, 4, 5],
+      "on_peak": 0.58155,
+      "off_peak": 0.51899,
+      "super_off_peak": 0.50084
+    }
+  },
+  "time_periods": {
+    "weekday": {
+      "on_peak": [[16, 21]],
+      "off_peak": [[6, 16], [21, 24]],
+      "super_off_peak": [[0, 6]],
+      "special_periods": {
+        "months": [3, 4],
+        "super_off_peak_extra": [[10, 14]]
+      }
+    },
+    "weekend_holiday": {
+      "on_peak": [[16, 21]],
+      "off_peak": [[14, 16], [21, 24]],
+      "super_off_peak": [[0, 14]]
+    }
+  },
+  "holidays": [
+    "2025-01-01",
+    "2025-02-17",
+    "2025-05-26",
+    "2025-07-04",
+    "2025-09-01",
+    "2025-11-11",
+    "2025-11-27",
+    "2025-12-25"
+  ],
+  "baseline_credit": {
+    "summer": -0.11017,
+    "winter": -0.11017,
+    "max_percentage": 130
+  },
+  "minimum_bill_daily": 0.402
+}
